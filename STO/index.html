@@ -1,0 +1,434 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="style/default.min.css"/>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=40dd0dd0-d17e-43fb-98bc-8099326cfe61" defer="defer" type="text/javascript"></script>
+    <title>ProService</title>
+  </head>
+  <body> 
+    <header class="page__header"> 
+      <div class="container"> 
+        <nav class="nav"> <a class="nav__link" href="/"><img class="nav__logo" src="images/header/logo.png" alt="logo"/></a>
+          <ul class="nav__list"> 
+            <li class="nav__item"> <a class="nav__item-link" href="/#heros">Главная</a></li>
+            <li class="nav__item"> <a class="nav__item-link" href="/#price">Цены</a></li>
+            <li class="nav__item"> <a class="nav__item-link" href="/#quote">О компании</a></li>
+            <li class="nav__item"> <a class="nav__item-link" href="/#map">Контакты</a></li>
+            <li class="nav__item"> <a class="nav__item-link" href="#">Юридическим лицам</a></li>
+          </ul>
+          <ul class="nav__social-list"> 
+            <li class="nav__social-item"><a class="nav__social-link" href="#"><img class="nav__social-logo" src="images/header/vk.png" alt="VK"/></a></li>
+            <li class="nav__social-item"><a class="nav__social-tel" href="tel:+79999999999">+7 (999) 999-99-99</a></li>
+          </ul>
+          <button class="burger"><img src="images/burger.png" alt="btn"/></button>
+        </nav>
+      </div>
+      <div class="burger-menu">   
+        <ul class="burger__list"> 
+          <li class="burger__item"><a class="nav__link" href="/"><img class="nav__logo" src="/images/header/logo.png" alt="logo"/></a></li>
+          <li class="burger__item"> <a class="burger__item-link" href="/#heros">Главная</a></li>
+          <li class="burger__item"> <a class="burger__item-link" href="/#price">Цены</a></li>
+          <li class="burger__item"> <a class="burger__item-link" href="/#quote">О компании</a></li>
+          <li class="burger__item"> <a class="burger__item-link" href="/#map">Контакты</a></li>
+          <li class="burger__item"> <a class="burger__item-link" href="#">Юридическим лицам</a></li>
+          <li class="burger__item"> <a class="burger__social-link" href="#"><img class="burger__social-logo" src="/images/header/vk.png" alt="VK"/></a></li>
+        </ul>
+        <button class="close-menu"><img src="images/x.png" alt="X"/></button>
+      </div>
+    </header>
+    <main>
+      <section class="section hero" id="heros"> 
+        <div class="container"> 
+          <div class="hero__container">   
+            <h1 class="main__title">Качественный <font color="red">ремонт автомобилей</font> любой сложности в Краснодаре</h1>
+            <div class="hero__content">  
+              <div class="hero__btn-container">   
+                <button class="hero__btn btn" data-fancybox="hero" data-src="#consult">Узнать подробнее</button>
+                <div class="hero__circle"> <span class="hero__circle-item hero__circle-item1"> </span><span class="hero__circle-item hero__circle-item2"></span><span class="hero__circle-item hero__circle-item3"></span><span class="hero__circle-item hero__circle-item4"></span><span class="hero__circle-item hero__circle-item5"></span><span class="hero__circle-item hero__circle-item6"></span><span class="hero__circle-item hero__circle-item7"></span><span class="hero__circle-item hero__circle-item8"></span><span class="hero__circle-item hero__circle-item9"></span></div>
+              </div>
+              <ul class="hero__list"> 
+                <li class="hero__item polygon"><img class="hero__item-img" src="images/hero/cuzov.png" alt="img"/><span class="hero__item-desc">Согласуем каждый этапа ремонта</span></li>
+                <li class="hero__item polygon"><img class="hero__item-img" src="images/hero/detail.png" alt="img"/><span class="hero__item-desc">Возвращаем Ваши старые детали</span></li>
+                <li class="hero__item polygon"><img class="hero__item-img hero__item-img-meh" src="images/hero/meh.png" alt="img"/><span class="hero__item-desc">Профессиональные механики</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="warranty">
+        <div class="container"> 
+          <h2 class="section__title">НАШИ ГАРАНТИИ</h2>
+          <div class="warranty__top">
+            <ul class="warranty__list"> 
+              <li class="warranty__item"> <img src="images/warranty/cuzov.png" alt="img"/>
+                <div class="warranty__item-text"> 
+                  <h4> Согласуем каждый этапа ремонта</h4><span> Ни одно действие по ремонту автомобиля не проводится без согласования с клиентом.</span>
+                </div>
+              </li>
+              <li class="warranty__item"> <img src="images/warranty/detail.png" alt="img"/>
+                <div class="warranty__item-text"> 
+                  <h4>Возвращаем Ваши старые детали</h4><span>Это дополнительный гарант честного оказания услуг.</span>
+                </div>
+              </li>
+              <li class="warranty__item"> <img src="images/warranty/meh.png" alt="img"/>
+                <div class="warranty__item-text"> 
+                  <h4>Профессиональные механики</h4><span> У нас работают только опытные специалисты с профильным образованием и большим опытом.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="warranty__bottom"> 
+            <div class="warranty__bottom-left">
+              <h4 class="warranty__bottom-title"><font color="red">Прозрачность</font> процесса ремонта</h4>
+              <p class="warranty__bottom-desc">
+                На СТО установлены камеры видеонаблюдения с онлайн-трансляцией. Наблюдайте за ремонтом своего авто с телефона в режиме реального времени.</p>
+              <button class="btn warranty__btn" data-fancybox="warranty" data-src="https://www.youtube.com/watch?v=1FW21">онлайн камеры </button>
+            </div>
+            <div class="warranty__bottom-right">   <img src="images/warranty/phone.png" alt="Phone"/><span></span></div>
+          </div>
+        </div>
+      </section>
+      <section class="foto">
+        <div class="container"> 
+          <h2 class="section__title">Фото автосервиса</h2>
+          <ul class="foto__list">
+            <li class="foto__item"><a data-fancybox="gallery" data-src="images/foto/1.png"> <img src="images/foto/1.png" alt="foto"/></a></li>
+            <li class="foto__item"> <a data-fancybox="gallery" data-src="images/foto/2.png"> <img src="images/foto/2.png" alt="foto"/></a></li>
+            <li class="foto__item"> <a data-fancybox="gallery" data-src="images/foto/3.png"> <img src="images/foto/3.png" alt="foto"/></a></li>
+            <li class="foto__item"> <a data-fancybox="gallery" data-src="images/foto/4.png"> <img src="images/foto/4.png" alt="foto"/></a></li>
+            <li class="foto__item"> <a data-fancybox="gallery" data-src="images/foto/1.png"> <img src="images/foto/1.png" alt="foto"/></a></li>
+            <li class="foto__item"> <a data-fancybox="gallery" data-src="images/foto/2.png"> <img src="images/foto/2.png" alt="foto"/></a></li>
+            <li class="foto__item"> <a data-fancybox="gallery" data-src="images/foto/3.png"> <img src="images/foto/3.png" alt="foto"/></a></li>
+            <li class="foto__item"> <a data-fancybox="gallery" data-src="images/foto/4.png"> <img src="images/foto/4.png" alt="foto"/></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="special"> 
+        <div class="container">
+          <h3 class="special__title">
+            Специальные <font color="red">условия для юридических лиц </font>парки такси Яндекс, Gett, Uber / автошколы / каршеринг / грузоперевозки</h3>
+          <ul class="special__list">
+            <li class="special__item"> <span class="special__card-title">20%</span><span class="special__card-desc">Работаем с НДС</span></li>
+            <li class="special__item"> <span class="special__card-title">%</span><span class="special__card-desc">Дополнительные скидки</span></li>
+            <li class="special__item"> <img src="images/special/fast.png" alt="icon"/><span class="special__card-desc">Срочный ремонт</span></li>
+            <li class="special__item"> <img src="images/special/uric.png" alt="icon"/><span class="special__card-desc">Юридическое оформление</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section price" id="price">
+        <div class="container"> 
+          <h3 class="price__title">Узнать стоимость ремонта, прислав фотографию </h3>
+          <form class="price__form" action="">
+            <div class="price__input-container">
+              <input class="price__input" type="text" name="Name" placeholder="Ваше имя *" required="required"/>
+              <input class="price__input" type="tel" name="tel" placeholder="Ваш телефон *" required="required"/>
+              <input class="price__input" type="email" name="mail" placeholder="Ваша почта *" required="required"/>
+              <div class="add-file">
+                <label class="add-file__label" for="price__input">Загрузить фото</label>
+                <input class="price__input" id="price__input" type="file" name="foto" placeholder="Загрузить фото"/>
+              </div>
+            </div>
+            <div class="price__check-container">
+              <label for="price__check">Я принимаю условия  
+                <input id="price__check" type="checkbox" cheked="cheked" required="required"/><span></span>
+              </label><a class="price__check-link" href="#">передачи информации</a>
+            </div>
+            <button class="btn">Получить консультацию</button>
+          </form>
+        </div>
+      </section>
+      <section class="services"> 
+        <div class="container"> 
+          <h2 class="section__title">НАШИ Услуги</h2>
+          <div class="services__select-list"> 
+            <button class="services__btn" id="services__diagnostics">Диагностика</button>
+            <button class="services__btn" id="services__repair">Ремонт</button>
+            <button class="services__btn" id="services__other">Прочее</button>
+          </div>
+          <ul class="services__list"> 
+            <li class="services__item polygon"><a data-fancybox="1" href="#popup-service"> <img src="images/services/1.png" alt="icon"/><span>Диагностика автомобиля</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="2" href="#popup-service"> <img src="images/services/2.png" alt="icon"/><span>Автоэлектрик</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="3" href="#popup-service"> <img src="images/services/3.png" alt="icon"/><span>Ремонт двигателя</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="4" href="#popup-service"> <img src="images/services/4.png" alt="icon"/><span>Ремонт турбин</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="5" href="#popup-service"> <img src="images/services/5.png" alt="icon"/><span>Ремонт глушителей</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="6" href="#popup-service"> <img src="images/services/6.png" alt="icon"/><span>Ремонт подвески</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="7" href="#popup-service"> <img src="images/services/7.png" alt="icon"/><span>Компьютерная диагностика</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="8" href="#popup-service"> <img src="images/services/8.png" alt="icon"/><span>Автомойка</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="9" href="#popup-service"> <img src="images/services/9.png" alt="icon"/><span>Ремонт тормозной системы</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="10" href="#popup-service"> <img src="images/services/10.png" alt="icon"/><span>Ремонт рулевого управления</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="11" href="#popup-service"> <img src="images/services/11.png" alt="icon"/><span>Ремонт трансмиссии</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="12" href="#popup-service"> <img src="images/services/12.png" alt="icon"/><span>Ремонт АКПП</span></a></li>
+            <li class="services__item polygon"><a data-fancybox="13" href="#popup-service"> <img src="images/services/13.png" alt="icon"/><span>Развал-схождения </span></a></li>
+            <li class="services__item polygon"><a data-fancybox="14" href="#popup-service"> <img src="images/services/14.png" alt="icon"/><span>Замена двигателей</span></a></li>
+          </ul>
+          <div class="hide" id="popup-service">
+            <div class="popup-service popup">
+              <h2 class="popup-service__title">Компьютерная диагностика автомобиля</h2>
+              <p class="popup-service__desc">
+                Из всех технологических достижений в автомобильной отрасли за последние десятилетия одним из наиболее выгодных как для потребителей,
+                так и для автотехников стала компьютеризация компонентов автомобиля. Используя 
+                специализированное программное обеспечение, диагностические инструменты 
+                автомобиля быстро и точно указывают на проблемные зоны в двигателе или в других 
+                местах, благодаря встроенным процессорам, микрочипам и датчикам.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-slider">
+        <div class="container"> 
+          <div class="slider"> 
+            <div class="slider__item"> <img src="images/slider/hy.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/au.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/nis.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/land.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/merc.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/opel.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/chev.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/hy.png" alt="icon"/></div>
+            <div class="slider__item"> <img src="images/slider/au.png" alt="icon"/></div>
+          </div>
+        </div>
+      </section>
+      <section class="section quote" id="quote">
+        <div class="section__container-quote">
+          <div class="container"> 
+            <div class="quote__container">
+              <div class="quote__man"> <img src="images/quote/man.png" alt="man"/>
+                <div class="quote__man-desc"><span class="quote__name">Александр</span><span class="quote__position">основатель </span></div>
+              </div>
+              <div class="quote__content"> 
+                <h3 class="quote__title">«Наша цель — заслужить Ваше доверие и лояльность»</h3>
+                <p class="quote__desc">
+                  Обслуживая свой автомобиль в Tony Motors, Вы получаете личную гарантию качества от основателя СТО. Мы несем полную материальную 
+                  и юридическую ответственность за свои рекомендации и произведенный ремонт.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video"> 
+        <div class="section__container-video">
+          <div class="container"><img src="images/video/video.png"/><a class="video__btn" data-fancybox="video-gallerey" href="https://www.youtube.com/watch?v=1FW21oMW7cI&amp;list=RDGMEMYH9CUrFO7CfLJpaD7UR85wVM1FW21oMW7cI&amp;start_radio=1"><img src="images/video/btn.png" alt="play"/></a></div>
+        </div>
+      </section>
+      <section class="causes">
+        <div class="section__container-causes">
+          <div class="container"> 
+            <h3 class="causes__title"><font color="red">5 причин</font> отремонтировать вашу машину в </h3>
+            <ul class="causes__list"> 
+              <li class="causes__item"> <img src="images/causes/1.png" alt="img"/>
+                <div class="causes__item-desc"> 
+                  <h4>Квалифицированные специалисты</h4><span>В штате работают только профессионалы с большим опытом </span>
+                </div>
+              </li>
+              <li class="causes__item"> <img src="images/causes/2.png" alt="img"/>
+                <div class="causes__item-desc"> 
+                  <h4>Квалифицированные специалисты</h4><span>В штате работают только профессионалы с большим опытом</span>
+                </div>
+              </li>
+              <li class="causes__item"> <img src="images/causes/3.png" alt="img"/>
+                <div class="causes__item-desc"> 
+                  <h4>Квалифицированные специалисты</h4><span>В штате работают только профессионалы с большим опытом</span>
+                </div>
+              </li>
+              <li class="causes__item"> <img src="images/causes/4.png" alt="img"/>
+                <div class="causes__item-desc"> 
+                  <h4>Квалифицированные специалисты</h4><span>В штате работают только профессионалы с большим опытом</span>
+                </div>
+              </li>
+              <li class="causes__item"> <img src="images/causes/5.png" alt="img"/>
+                <div class="causes__item-desc"> 
+                  <h4>Квалифицированные специалисты</h4><span>В штате работают только профессионалы с большим опытом</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="wash"> 
+        <div class="container"> 
+          <h2 class="section__title">автомойка</h2>
+          <div class="wash__car-container"><img class="wash__car" src="images/wash/car.png" alt="car"/>
+            <div class="wash__cont engine"> <a data-fancybox="wash1" href="#popup-wash">Мойка двигателя</a><img src="images/wash/dvig.svg"/></div>
+            <div class="wash__cont carcase"><a data-fancybox="wash2" href="#popup-wash">Мойка кузова</a><img src="images/wash/cuz.svg"/></div>
+            <div class="wash__cont rain"><a data-fancybox="wash3" href="#popup-wash">антидождь</a><img src="images/wash/rain.svg"/></div>
+            <div class="wash__cont polishing"><a data-fancybox="wash4" href="#popup-wash">Полировка</a><img src="images/wash/poly.svg"/></div>
+            <div class="wash__cont lights"><a data-fancybox="wash5" href="#popup-wash">Полировка фар</a><img src="images/wash/far.svg"/></div>
+            <div class="wash__cont lux"><a data-fancybox="wash6" href="#popup-wash">Мойка люкс</a><img src="images/wash/lux.svg"/></div>
+            <div class="wash__cont salon"><a data-fancybox="wash7" href="#popup-wash">химчистка салона</a><img src="images/wash/salon.svg"/></div>
+            <div class="wash__cont wax"><a data-fancybox="wash8" href="#popup-wash">твердый воск</a><img src="images/wash/vosk.svg"/></div>
+          </div>
+        </div>
+        <div class="wash__car-container-mobile">{<img class="wash__car-mobile" src="images/wash/car-adaptive.png" alt="car"/>
+          <div class="wash__cont-mobile engine-mobile"><a data-fancybox="wash11" href="#popup-wash">Мойка двигателя</a><img src="images/wash/dvig2.svg"/></div>
+          <div class="wash__cont-mobile carcase-mobile"><a data-fancybox="wash12" href="#popup-wash">Мойка кузова</a><img src="images/wash/cuz2.svg"/></div>
+          <div class="wash__cont-mobile rain-mobile"><a data-fancybox="wash13" href="#popup-wash">антидождь</a><img src="images/wash/rain2.svg"/></div>
+          <div class="wash__cont-mobile polishing-mobile"><a data-fancybox="wash14" href="#popup-wash">Полировка</a><img src="images/wash/poly2.svg"/></div>
+          <div class="wash__cont-mobile lights-mobile"><a data-fancybox="wash15" href="#popup-wash">Полировка фар</a><img src="images/wash/light2.svg"/></div>
+          <div class="wash__cont-mobile lux-mobile"><a data-fancybox="wash16" href="#popup-wash">Мойка люкс</a><img src="images/wash/lux2.svg"/></div>
+          <div class="wash__cont-mobile salon-mobile"><a data-fancybox="wash17" href="#popup-wash">химчистка салона</a><img src="images/wash/salon2.svg"/></div>
+          <div class="wash__cont-mobile wax-mobile"><a data-fancybox="wash18" href="#popup-wash">твердый воск</a><img src="images/wash/vosk2.svg"/></div>
+        </div>
+        <div class="container popup-wash popup hide" id="popup-wash">
+          <div class="popup-wash__left"> 
+            <div class="popup-wash__left-desc">
+              <h3 class="popup-wash__title">Мойка кузова</h3>
+              <p class="popup-wash__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquam, suscipit quod expedita at quisquam fugiat eius modi 
+                voluptatem ab adipisci! Ad molestias reprehenderit debitis facere, vero 
+                aperiam rem consequuntur.
+              </p>
+            </div>
+            <button class="btn popup-wash__btn" data-fancybox="data-fancybox" data-src="#consult">заказать</button>
+          </div>
+          <div class="popup-wash__right video"><img src="images/video/wash-video.png"/>
+            <button class="video__btn" data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=1FW21oMW7cI&amp;list=RDGMEMYH9CUrFO7CfLJpaD7UR85wVM1FW21oMW7cI&amp;start_radio=1"> <img src="images/video/btn.png" alt="play"/></button>
+          </div>
+        </div>
+      </section>
+      <section class="review"> 
+        <div class="container">
+          <h2 class="section__title">Отзывы</h2>
+          <ul class="review__list"> 
+            <li class="review__item"> 
+              <div class="review__item-head"> <span class="review__item-name">Александр</span>
+                <time class="review__item-date">01.01.2022</time>
+              </div>
+              <p class="review__item-desc">
+                После покупкой машины, записался по телефону на полное ТО автомобиля. Утром оставил машину, к обеду все было готово. 
+                Хорошая подробная отчетность о проведенных работах, все цены по фиксированные 
+                по прайсу, все прозрачно без подводных камней. Советую!
+              </p>
+            </li>
+            <li class="review__item"> 
+              <div class="review__item-head"> <span class="review__item-name">Александр</span>
+                <time class="review__item-date">01.01.2022</time>
+              </div>
+              <p class="review__item-desc">
+                После покупкой машины, записался по телефону на полное ТО автомобиля. Утром оставил машину, к обеду все было готово. 
+                Хорошая подробная отчетность о проведенных работах, все цены по фиксированные 
+                по прайсу, все прозрачно без подводных камней. Советую!
+              </p>
+            </li>
+            <li class="review__item"> 
+              <div class="review__item-head"> <span class="review__item-name">Александр</span>
+                <time class="review__item-date">01.01.2022</time>
+              </div>
+              <p class="review__item-desc">
+                После покупкой машины, записался по телефону на полное ТО автомобиля. Утром оставил машину, к обеду все было готово. 
+                Хорошая подробная отчетность о проведенных работах, все цены по фиксированные 
+                по прайсу, все прозрачно без подводных камней. Советую!
+              </p>
+            </li>
+            <li class="review__item"> 
+              <div class="review__item-head"> <span class="review__item-name">Александр</span>
+                <time class="review__item-date">01.01.2022</time>
+              </div>
+              <p class="review__item-desc">
+                После покупкой машины, записался по телефону на полное ТО автомобиля. Утром оставил машину, к обеду все было готово. 
+                Хорошая подробная отчетность о проведенных работах, все цены по фиксированные 
+                по прайсу, все прозрачно без подводных камней. Советую!
+              </p>
+            </li>
+            <li class="review__item"> 
+              <div class="review__item-head"> <span class="review__item-name">Александр</span>
+                <time class="review__item-date">01.01.2022</time>
+              </div>
+              <p class="review__item-desc">
+                После покупкой машины, записался по телефону на полное ТО автомобиля. Утром оставил машину, к обеду все было готово. 
+                Хорошая подробная отчетность о проведенных работах, все цены по фиксированные 
+                по прайсу, все прозрачно без подводных камней. Советую!
+              </p>
+            </li>
+            <li class="review__item"> 
+              <div class="review__item-head"> <span class="review__item-name">Александр</span>
+                <time class="review__item-date">01.01.2022</time>
+              </div>
+              <p class="review__item-desc">
+                После покупкой машины, записался по телефону на полное ТО автомобиля. Утром оставил машину, к обеду все было готово. 
+                Хорошая подробная отчетность о проведенных работах, все цены по фиксированные 
+                по прайсу, все прозрачно без подводных камней. Советую!
+              </p>
+            </li>
+            <li class="review__item"> 
+              <div class="review__item-head"> <span class="review__item-name">Александр</span>
+                <time class="review__item-date">01.01.2022</time>
+              </div>
+              <p class="review__item-desc">
+                После покупкой машины, записался по телефону на полное ТО автомобиля. Утром оставил машину, к обеду все было готово. 
+                Хорошая подробная отчетность о проведенных работах, все цены по фиксированные 
+                по прайсу, все прозрачно без подводных камней. Советую!
+              </p>
+            </li>
+          </ul>
+          <div class="show__more"> <span>Показать ещё</span>
+            <button class="review__btn"> </button>
+          </div>
+        </div>
+      </section>
+      <section class="consult"> 
+        <div class="container"> 
+          <div class="consult__container">
+            <div class="consult__left"><img class="consult__img-title" src="images/consult/tel.png" alt="Phone"/>
+              <div class="hero__circle"> <span class="hero__circle-item hero__circle-item1"> </span><span class="hero__circle-item hero__circle-item2"></span><span class="hero__circle-item hero__circle-item3"></span><span class="hero__circle-item hero__circle-item4"></span><span class="hero__circle-item hero__circle-item5"></span><span class="hero__circle-item hero__circle-item6"></span><span class="hero__circle-item hero__circle-item7"></span><span class="hero__circle-item hero__circle-item8"></span><span class="hero__circle-item hero__circle-item9"></span></div>
+            </div>
+            <div class="consult__right" id="consult">
+              <form class="consult__form" action=""> 
+                <h3 class="consult__form-title">Получить консультацию</h3>
+                <input type="text" name="name" placeholder="Ваше имя *" required="required"/>
+                <input type="tel" name="tel" placeholder="Ваш телефон *" required="required"/>
+                <div class="consult__label"> 
+                  <label for="consult__check">Я принимаю условия  
+                    <input id="consult__check" type="checkbox" cheked="cheked" required="required"/><span></span>
+                  </label><a class="consult__check-link" href="#">передачи информации</a>
+                </div><a class="btn" data-fancybox="dialog" href="#popup-consult">Получить консультацию</a>
+              </form>
+            </div>
+          </div>
+          <div class="popup-consult hide" id="popup-consult"><img class="popup-consult__img" src="/images/ok.png" alt="ok"/>
+            <h3 class="popup-consult__title">Спасибо!</h3><span class="popup-consult__thank">Ваша заявка принята</span>
+            <p class="popup-consult__desc">
+              В ближайшее время мы с Вами свяжемся, ответим на имеющиеся вопросы и обсудим все детали</p>
+          </div>
+        </div>
+      </section>
+      <section class="section map" id="map">
+        <div class="map__canvas" id="map__canvas"></div>
+        <div class="map__left"> 
+          <h3 class="map__left-title">Адреса:</h3>
+          <ul class="map__left-list"> 
+            <li class="map__left-item"> <img src="images/token.png" alt="token"/><a class="map__link" id="map__link-first" href="">г.Краснодар, ул.Уральская </a></li>
+            <li class="map__left-item"> <img src="images/token.png" alt="token"/><a class="map__link" id="map__link-second" href="">г.Краснодар, ул.Уральская </a></li>
+            <li class="map__left-item"> <img src="images/token.png" alt="token"/><a class="map__link" id="map__link-third" href="">г.Краснодар, ул.Уральская </a></li>
+          </ul>
+        </div>
+        <div class="map__right"> 
+          <h3 class="map__right-title">Контакты</h3>
+          <ul class="map__right-list"> 
+            <li class="map__right-item"> <a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
+            <li class="map__right-item"> <a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
+          </ul>
+          <div class="map__right-info"> <span class="map__right-info-time">с 8:00 до 21:00</span><span class="map__right-info-weekend">БЕЗ ВЫХОДНЫХ</span></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">  
+      <div class="container">
+        <div class="footer__container"> 
+          <div class="footer__left"><a href="/"> <img class="footer__logo" src="images/footer/logo.png" alt="logo"/></a><a class="footer__left-link" href="#">Политика конфиденциальности</a></div>
+          <div class="footer__center"> <a class="footer__social-link" href="#"><span>Нас можно найти</span><img src="images/footer/vk.png" alt="vk"/></a></div>
+          <div class="footer__right"> <span>Разработка сайта</span><a class="footer__right-link" href=""><img src="images/footer/nice.png" alt="logo"/></a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="script/default.min.js"> </script>
+</html>

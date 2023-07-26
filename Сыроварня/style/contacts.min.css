@@ -1,0 +1,223 @@
+.contacts__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 30px 65px 40px;
+  width: 50%;
+}
+.contacts__form-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #2D2D2D;
+}
+.contacts__form-title-desc {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #2D2D2D;
+}
+.contacts__form-title-info {
+  margin-bottom: 10px;
+  padding: 25px 0;
+  padding-left: 30px;
+  width: 100%;
+  height: 70px;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--colorBlack0);
+  background: var(--colorFFF);
+  box-shadow: inset 0px 4px 7px rgba(98, 154, 157, 0.55);
+  border-radius: 5px;
+  border: none;
+}
+.contacts__label {
+  margin-bottom: 20px;
+}
+.contacts button {
+  margin: 0 auto;
+  padding: 15px 55px;
+}
+.contacts__right-info {
+  width: 65%;
+}
+.contacts__right {
+  margin: 0 auto;
+}
+.contacts__right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 80%;
+  border-radius: 5px;
+}
+.contacts__right-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 33px;
+  color: var(--colorBlack0);
+}
+.contacts__right-item {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.contacts__right-item a {
+  color: var(--colorBlack0);
+}
+.contacts__right-item:hover a {
+  color: var(--colorPink);
+}
+.contacts__right-info-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--colorBlack0);
+  text-align: center;
+}
+.contacts__right-info-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.contacts__right-info-time {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--colorBlack0);
+}
+.contacts__right-info-timezone {
+  padding: 5px 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--colorFFF);
+  box-shadow: 0px 4px 4px rgba(255, 89, 89, 0.25);
+  border-radius: 5px;
+}
+.contacts__right-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__right-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+}
+.contacts__right-social-item:not(:last-child) {
+  margin-right: 5px;
+}
+.contacts__right-social-icon {
+  transition: 0.6s;
+}
+.contacts__right-social-link:hover img {
+  transform: scale(1.2);
+}
+
+label {
+  margin-right: 3px;
+  position: relative;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--colorBlack0);
+  cursor: pointer;
+}
+
+#contacts__check {
+  display: none;
+}
+#contacts__check + span {
+  position: absolute;
+  left: -25px;
+  top: -3px;
+  width: 20px;
+  height: 20px;
+  background: var(--colorFFF);
+  border: 0.5px solid var(--colorFFF);
+  box-shadow: inset 0px 1px 2px rgba(201, 165, 66, 0.63);
+  border-radius: 11px;
+}
+#contacts__check + span::before {
+  content: " ";
+  position: absolute;
+  background-image: url("../images/check.png");
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 4px;
+  left: 3px;
+  opacity: 1;
+}
+#contacts__check:checked + span::before {
+  opacity: 0;
+}
+
+.contacts__check-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--colorBlack0);
+  text-decoration: underline;
+  transition: 0.6s;
+}
+
+@media (max-width: 1057px) {
+  .contacts__form {
+    width: 75%;
+  }
+}
+@media (max-width: 640px) {
+  .contacts__form {
+    width: 100%;
+  }
+
+  .contacts__form {
+    padding: 20px 10px;
+  }
+
+  .contacts__form-title-info {
+    height: 50px;
+  }
+}
+@media (max-width: 485px) {
+  .contacts__right-content {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .contacts__form-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .contacts__form-title-desc {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  label,
+.contacts__check-link {
+    font-size: 9px;
+    line-height: 11px;
+  }
+}

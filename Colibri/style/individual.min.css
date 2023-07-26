@@ -1,0 +1,227 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.individual-slider {
+  background-color: var(--colorGrey);
+}
+
+.slider__individual {
+  padding-top: 5%;
+  padding-bottom: 7%;
+  position: relative;
+  width: 100%;
+}
+.slider__individual .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  width: 21px;
+  height: 30px;
+  top: 40%;
+  z-index: 10;
+}
+.slider__individual .slick-prev,
+.slider__individual .slick-next {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+  transition: 0.6s;
+}
+.slider__individual .slick-prev {
+  left: 0;
+  background-image: url("../images/arrow-prev.png");
+}
+.slider__individual .slick-next {
+  right: 0;
+  background-image: url("../images/arrow-next.png");
+}
+.slider__individual .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__individual .slick-dots li:not(:last-child) {
+  margin-right: 25px;
+}
+.slider__individual .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  background-color: var(--colorFFF);
+  border: 2px solid #F8E579;
+  border-radius: 100%;
+}
+.slider__individual .slick-dots .slick-active button {
+  background-color: #F8E579;
+}
+.slider__individual-item {
+  display: flex !important;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1080px) {
+  .slider__individual .slick-prev {
+    left: 25%;
+  }
+  .slider__individual .slick-next {
+    right: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .slider__individual .slick-prev {
+    left: 15%;
+  }
+  .slider__individual .slick-next {
+    right: 15%;
+  }
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  margin-bottom: 4%;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--colorBlack0);
+}
+
+@media (max-width: 1220px) {
+  h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 1040px) {
+  h1 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 520px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.individual {
+  padding-bottom: 2%;
+  border-bottom: 1px dashed rgba(0, 68, 15, 0.3);
+}
+.individual__desc img {
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-right: 4%;
+  float: left;
+}
+.individual__desc p {
+  margin-bottom: 2%;
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--colorBlack0);
+}
+
+@media (max-width: 767px) {
+  .individual__desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .individual__desc img {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,71 @@
+.error {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/consult/consult-img.png");
+  background-size: cover;
+  background-position: center top;
+}
+.error__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error__title {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 223px;
+  text-transform: uppercase;
+  color: #AE5144;
+  text-shadow: 0px 6px 11px rgba(128, 86, 81, 0.55);
+}
+.error__title-desc {
+  margin-bottom: 50px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 2.84em;
+  text-transform: uppercase;
+  color: #C0A13D;
+}
+.error__desc {
+  margin-bottom: 25px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.error__link {
+  padding: 15px 10px;
+}
+
+@media (max-width: 1040px) {
+  .error__title {
+    font-size: 165px;
+    line-height: 185px;
+  }
+  .error__title-desc {
+    margin-bottom: 30px;
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .error__desc {
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 10px;
+  }
+  .error__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

@@ -1,0 +1,40 @@
+.video {
+  position: relative;
+  margin-bottom: 150px;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  width: 11%;
+  height: 66%;
+  background-image: url("../images/video/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.video__content {
+  position: relative;
+  padding: 4%;
+  background-color: #B7DADC;
+}
+.video__img {
+  width: 100%;
+}
+.video__btn {
+  position: absolute;
+  background-color: unset;
+  border: none;
+  border-radius: 100%;
+  top: 34%;
+  left: 43%;
+  width: 15%;
+  height: 30%;
+}
+.video__btn:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 540px) {
+  .video {
+    margin-bottom: 60px;
+  }
+}

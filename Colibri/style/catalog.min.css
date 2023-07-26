@@ -1,0 +1,464 @@
+.card {
+  margin-bottom: 25px;
+  padding: 10px 10px 15px;
+  position: relative;
+  background: var(--colorFFF);
+  box-shadow: 0px 4px 4px rgba(0, 68, 15, 0.15);
+  border-radius: 5px;
+  font-family: "Roboto";
+  text-align: center;
+  color: var(--colorBlack0);
+  z-index: 10;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/star.png");
+  background-size: contain;
+  width: 28px;
+  height: 28px;
+  top: 4%;
+  right: 6%;
+  cursor: pointer;
+}
+.card__img {
+  position: relative;
+  margin-bottom: 3%;
+}
+.card__img img {
+  width: 100%;
+}
+.card__img .zoom-btn {
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  position: absolute;
+  border: none;
+  background-color: inherit;
+}
+.card__img .zoom-btn img {
+  margin-bottom: 0;
+}
+.card h3 {
+  margin-bottom: 4%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.card span {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.card button {
+  padding: 5% 18%;
+  border: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--colorFFF);
+  transition: 0.6s;
+}
+.card button:hover {
+  color: var(--colorGreen);
+}
+
+@media (max-width: 1040px) {
+  .card h3 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 940px) {
+  .card__img .zoom-btn {
+    width: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .card__img .zoom-btn {
+    width: 40px;
+  }
+  .card button {
+    padding: 3% 18%;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  margin-bottom: 4%;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--colorBlack0);
+}
+
+@media (max-width: 1220px) {
+  h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 1040px) {
+  h1 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 520px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.SumoSelect {
+  width: 80%;
+  height: 40px;
+}
+
+.SumoSelect > .CaptionCont {
+  padding-top: 11px;
+  height: 40px;
+  background: var(--colorFFF);
+  border-radius: 3px;
+  border: none;
+}
+
+.SumoSelect.open > .optWrapper {
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.SumoSelect > .CaptionCont > label > i {
+  background-image: url("../images/arrow-select.png");
+}
+
+.SumoSelect > .optWrapper > .options li.opt {
+  border-bottom: none !important;
+}
+.SumoSelect > .optWrapper > .options li.opt:hover {
+  background: linear-gradient(354.21deg, rgba(248, 229, 121, 0.5) -27.06%, rgba(241, 209, 97, 0.5) 37.1%, rgba(166, 120, 31, 0.5) 105.41%);
+}
+
+@media (max-width: 540px) {
+  .basket .SumoSelect {
+    width: 100%;
+  }
+}
+.catalog__filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+}
+
+.SumoSelect {
+  width: 24%;
+  height: 40px;
+}
+
+.SumoSelect > .CaptionCont > span.placeholder {
+  background-color: none !important;
+  color: var(--colorBlack0);
+  font-style: normal;
+}
+
+.placeholder {
+  background-color: transparent;
+  opacity: 1;
+}
+
+@media (max-width: 930px) {
+  .catalog .SumoSelect > .CaptionCont {
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .catalog__filter {
+    flex-wrap: wrap;
+  }
+  .catalog .SumoSelect {
+    margin-bottom: 15px;
+    width: 31%;
+  }
+}
+@media (max-width: 816px) {
+  .catalog .SumoSelect > .CaptionCont {
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 635px) {
+  .catalog .SumoSelect > .CaptionCont {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 540px) {
+  .catalog__filter {
+    padding-top: 10px;
+  }
+  .catalog .SumoSelect {
+    width: 90%;
+  }
+  .catalog .SumoSelect > .CaptionCont {
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
+.hit {
+  position: relative;
+}
+.hit::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/hit.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 57px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+@media (max-width: 940px) {
+  .hit::before {
+    width: 49px;
+    height: 23px;
+  }
+}
+@media (max-width: 470px) {
+  .hit::before {
+    width: 49px;
+    height: 25px;
+  }
+}
+@media (max-width: 380px) {
+  .hit::before {
+    width: 42px;
+    height: 21px;
+  }
+}
+.new {
+  position: relative;
+}
+.new::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/new.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 93px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+@media (max-width: 940px) {
+  .new::before {
+    width: 81px;
+    height: 23px;
+  }
+}
+@media (max-width: 470px) {
+  .new::before {
+    width: 85px;
+    height: 23px;
+  }
+}
+@media (max-width: 380px) {
+  .new::before {
+    width: 71px;
+    height: 20px;
+  }
+}
+.catalog {
+  position: relative;
+  z-index: 0;
+}
+.catalog::before {
+  content: url("../images/petal/petal5.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.catalog .container {
+  z-index: 10;
+}
+.catalog__reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalog__reset span {
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--colorBlack0);
+}
+.catalog__reset-btn {
+  border: none;
+  background-color: inherit;
+  transition: 0.6s;
+}
+.catalog__reset-btn:hover {
+  transform: rotate(360deg);
+}
+.catalog__sort {
+  display: flex;
+  margin-bottom: 3%;
+}
+.catalog__sort li {
+  margin-right: 2%;
+}
+.catalog__sort li span,
+.catalog__sort li a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--colorBlack0);
+  transition: 0.6s;
+}
+.catalog__sort li a:hover {
+  border-bottom: 1px solid var(--colorBlack0);
+}
+.catalog__nav-list, .catalog-btn {
+  display: flex;
+  justify-content: center;
+  width: 46%;
+  margin-left: 27%;
+  margin-bottom: 4%;
+  transition: 0.6s;
+}
+.catalog__nav-list:hover, .catalog-btn:hover {
+  color: var(--colorGreen);
+}
+.catalog__nav-list {
+  justify-content: space-between;
+}
+.catalog__nav-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.catalog__nav-list li button {
+  background-color: unset;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--colorFFF);
+  transition: 0.6s;
+}
+.catalog__nav-list li button img {
+  transition: 0.6s;
+}
+.catalog__nav-list li button:hover {
+  color: var(--colorGreen);
+}
+.catalog__nav-list li button:hover img {
+  transform: scale(1.2);
+}
+.catalog::after {
+  content: url("../images/petal/petal5.png");
+  position: absolute;
+  right: 0;
+  top: 35%;
+  z-index: -1;
+}
+
+.page {
+  background-color: var(--colorGrey);
+}
+
+.catalog__hide {
+  display: none;
+  animation: myAnim 1.5s linear 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+}
+@media (max-width: 767px) {
+  .catalog .wide-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .catalog__nav-list li {
+    width: 40px;
+    height: 40px;
+  }
+  .catalog__nav-list li a {
+    font-size: 28px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 720px) {
+  .catalog__sort {
+    flex-wrap: wrap;
+  }
+  .catalog__sort li {
+    margin-right: 3%;
+  }
+  .catalog__sort li a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .catalog::after,
+.catalog::before {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .catalog .wide-btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .catalog__nav-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 440px) {
+  .catalog-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}

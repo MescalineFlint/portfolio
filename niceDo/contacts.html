@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style/default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style/contacts.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-auto col-sm-6">
+              <div class="logo" itemscope itemtype="http://schema.org/Organization"><a class="logo__link" itemprop="url" href="/"><img class="logo__img" src="./assets/images/logo.svg" alt="NiceDO" itemprop="logo"></a>
+                <div class="logo__slogan">Агентство<br>бизнес-решений</div>
+                <meta itemprop="name" content="NiceDO">
+                <meta itemprop="telephone" content="+7 (861) 292-88-40">
+              </div>
+            </div>
+            <div class="col-lg d-none d-lg-block"></div>
+            <div class="col-lg-auto col-sm-6">
+              <div class="header-social">
+                <div class="header-social__text">Связаться с нами<br>в мессенджерах</div><a class="header-social__item header-social__item--inst" href="#" target="_blank"></a><a class="header-social__item header-social__item--fb" href="#" target="_blank"></a>
+              </div>
+            </div>
+            <div class="col-lg-auto col-10">
+              <div class="header-phone"><a class="header-phone__item" href="tel:+78612928840">+7 (861) 292-88-40</a>
+                <div class="header-phone__schedule">пн-пт 9:00 - 18:00</div>
+              </div>
+            </div>
+            <div class="col-lg-auto col-2">
+              <div class="burger">
+                <button class="burger__item"></button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="page__title">Контакты</h1>
+            </div>
+          </div>
+        </div>
+        <div class="burger__menu" id="burger__menu">
+          <div class="burger__menu-container">
+            <button class="burger__menu-close">  </button><a class="burger__menu-logo-link" href="/"> <img class="burger__menu-logo" src="assets/images/burger-menu-img.png"></a>
+            <ul class="burger__menu-list"> 
+              <li class="burger__menu-item"><a href="about.html">О нас</a></li>
+              <li class="burger__menu-item"><a href="services.html">Услуги</a></li>
+              <li class="burger__menu-item"><a href="cases.html">Портфолио</a></li>
+              <li class="burger__menu-item"><a href="projects.html">Кейсы</a></li>
+              <li class="burger__menu-item"><a href="businessPartners.html">Партнеры</a></li>
+              <li class="burger__menu-item"><a href="vacancies.html">Вакансии</a></li>
+              <li class="burger__menu-item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="burger__menu-bottom">
+              <ul class="burger__menu-contacts"> 
+                <li class="burger__menu-contacts-item"> <a href="mailto:info@nicedo.ru">info@nicedo.ru</a></li>
+                <li class="burger__menu-contacts-item"> <a href="tel:+78612928840">+7 (861) 292-88-40</a></li>
+              </ul>
+              <button class="burger__menu-btn">Получить предложение</button>
+              <div class="burger__menu-link"> <a href="#">Договор офферта</a><a href="#">Политика конфиденциальности</a></div><a class="burger__menu-link-nice" href="#">© 2021 NiceDo</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__content"><a class="btn__arrow-top" href="#"><img src="./assets/images/arrow-top.svg"></a>
+        <button class="btn__get-offer"><img src="./assets/images/get-offer.svg"></button>
+        <section class="contacts"> 
+          <div class="container">  
+            <div class="contacts__content"> 
+              <ul class="contacts__social-list"> 
+                <li class="contacts__social-item"> <a href="">instagram</a></li>
+                <li class="contacts__social-item"> <a href="">facebook</a></li>
+              </ul>
+              <ul class="contacts__list"> 
+                <li class="contacts__item"><a href="mailto:info@nicedo.ru">Email: info@nicedo.ru</a></li>
+                <li class="contacts__item"><a href="tel:+78612928840">+7 (861) 292-88-40</a></li>
+                <li class="contacts__item"><a href="https://maps.yandex.ru">г.Краснодар, ул.Пластунская 12</a></li>
+              </ul>
+            </div>
+            <div class="contacts__project"> 
+              <h2>Расскажите о вашем проекте        </h2>
+              <button class="contacts__btn">Написать  </button>
+            </div>
+          </div>
+          <div class="popup" id="popup-contacts">
+            <h2>Расскажите о вашем проекте</h2>
+            <button id="popup__btn-esc"> <img src="assets/images/x.svg"></button>
+            <form action="">
+              <div class="popup__input-top">
+                <input type="text" placeholder="Имя" name="name" requried autocomplete>
+                <input type="tel" placeholder="Телефон" name="phone" requried autocomplete>
+              </div>
+              <input class="popup__input" type="email" placeholder="Email" name="email" requried autocomplete>
+              <textarea name="text" placeholder="Текст"></textarea>
+              <div class="fileinput-wrapper">
+                <input id="popup__fail-attach" type="file" name="attach">
+                <label class="popup__label-attach" for="popup__fail-attach">Прикрепить файл</label>
+              </div>
+              <div class="send">
+                <div class="send__desc"> 
+                  <label for="send__check">Нажимая на кнопку, вы соглашаетесь с
+                    <input id="send__check" type="checkbox" name="check" checked><span></span>
+                  </label><a href="#">Политикой конфиденциальности и Политикой обработки персональных данных</a>
+                </div>
+                <button>Отправить сообщение</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="page__footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Услуги</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Портфолио</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Кейсы</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="#">Партнеры</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4 col-sm-8">
+              <div class="footer-contacts">
+                <div class="footer-contacts__row"><a class="footer-contacts__link footer-contacts__link--phone" href="tel:+78612928840">+7 (861) 292-88-40</a></div>
+                <div class="footer-contacts__row"><a class="footer-contacts__link footer-contacts__link--email" href="mailto:info@nicedo.ru">info@nicedo.ru</a></div>
+                <div class="footer-contacts__row"><a class="footer-contacts__link footer-contacts__link--addr" href="https://maps.yandex.ru">350049, г. Краснодар,<br>ул. Пластунская, д. 12</a></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+              <div class="footer-social"><a class="footer-social__item footer-social__item--insta" href="#"></a><a class="footer-social__item footer-social__item--fb" href="#"></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/script/default.js"></script>
+    <!--script(src="https://code.jquery.com/jquery-3.6.0.min.js")-->
+    <!--script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js")-->
+    <script src="./script/main.js"></script>
+  </body>
+</html>

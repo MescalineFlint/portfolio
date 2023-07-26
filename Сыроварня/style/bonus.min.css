@@ -1,0 +1,119 @@
+.bonus {
+  margin-bottom: 150px;
+  padding: 55px 0 85px;
+  background-color: var(--colorBlue);
+}
+.bonus__content {
+  display: flex;
+  justify-content: space-between;
+}
+.bonus__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+.bonus__title {
+  margin-bottom: 35px;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 62px;
+  color: var(--colorPink);
+}
+.bonus__desc {
+  margin-bottom: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: var(--colorBlack0);
+}
+.bonus__right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.bonus__term {
+  margin-bottom: 35px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: var(--colorBlack0);
+}
+.bonus__btn {
+  margin: 0 auto;
+  padding: 20px 55px;
+}
+.bonus__timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #FFC4C4;
+  box-shadow: 0px 4px 7px rgba(106, 160, 163, 0.35);
+  border-radius: 5px;
+}
+.bonus__timer-hour, .bonus__timer-minut, .bonus__timer-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bonus__timer-number {
+  margin: 0 5px;
+  padding: 0 10px;
+  background: var(--colorFFF);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 66px;
+  text-align: center;
+  color: var(--colorBlack0);
+}
+.bonus__timer-colon {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 66px;
+  color: var(--colorBlack0);
+}
+
+@media (max-width: 940px) {
+  .bonus__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bonus__left {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .bonus__timer {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .bonus {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .bonus__timer {
+    padding: 10px;
+  }
+  .bonus__timer-number {
+    font-size: 27px;
+    line-height: 33px;
+  }
+  .bonus__timer-colon {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}

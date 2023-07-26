@@ -1,0 +1,68 @@
+.cheese {
+  position: relative;
+  margin-bottom: 70px;
+}
+.cheese::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../images/cheese/top-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 22%;
+  height: 70%;
+  z-index: -1;
+  animation: swim 15s infinite linear;
+}
+.cheese__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cheese__list:last-child {
+  margin-bottom: 80px;
+}
+.cheese__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.cheese__img {
+  margin-bottom: 30px;
+}
+.cheese__desc {
+  padding: 15px 50px;
+  border: 2px solid #FF5959;
+  box-shadow: 0px 4px 4px rgba(255, 89, 89, 0.25);
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--colorBlack0);
+}
+
+@keyframes swim {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 30%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@media (max-width: 540px) {
+  .cheese {
+    margin-bottom: 0;
+  }
+
+  .cheese__list:last-child {
+    margin-bottom: 0;
+  }
+}

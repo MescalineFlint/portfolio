@@ -1,0 +1,142 @@
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__left {
+  width: 50%;
+}
+.about__title {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: var(--colorBlack0);
+}
+.about__desc {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--colorBlack0);
+}
+.about__img {
+  width: 50%;
+  position: relative;
+  z-index: -1;
+}
+.about__img-img {
+  transform: translateY(12%);
+}
+.about__img-desc {
+  margin: 0 auto;
+  padding: 13px 25px;
+  position: absolute;
+  bottom: 6%;
+  left: 30%;
+  background: var(--colorFFF);
+  border: 2px solid var(--colorPink);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(255, 89, 89, 0.25);
+  border-radius: 5px;
+}
+.about__img-desc h4 {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--colorBlack0);
+}
+.about__img-desc span {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--colorBlack0);
+}
+
+@media (max-width: 1070px) {
+  .about__img-img {
+    transform: translateY(19%);
+  }
+}
+@media (max-width: 1020px) {
+  .about__content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .about__left {
+    width: 100%;
+  }
+  .about__img {
+    margin: 0 auto;
+    width: 65%;
+  }
+  .about__img-img {
+    transform: unset;
+    z-index: 0;
+  }
+}
+@media (max-width: 830px) {
+  .about__img-desc {
+    left: 23%;
+  }
+}
+@media (max-width: 767px) {
+  .about__img {
+    width: 80%;
+  }
+}
+@media (max-width: 660px) {
+  .about__img-desc {
+    padding: 10px 15px;
+    left: 28%;
+  }
+  .about__img-desc h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .about__img-desc span {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media (max-width: 540px) {
+  .about__img {
+    width: 100%;
+  }
+
+  .about__desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .about__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .about__img-desc {
+    left: 23%;
+  }
+}
+@media (max-width: 340px) {
+  .about__img-desc h4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .about__img-desc span {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .about__img-desc {
+    padding: 5px;
+  }
+}

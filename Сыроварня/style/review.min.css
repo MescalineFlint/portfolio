@@ -1,0 +1,250 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.review {
+  margin-bottom: 50px;
+}
+.review__title {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 54px;
+  text-align: center;
+  color: var(--colorBlack0);
+}
+.review__right {
+  padding: 50px 40px 60px 30px;
+  width: 55%;
+}
+.review__right-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.review__right-name, .review__right-date {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--colorBlack0);
+}
+.review__right-desc {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--colorBlack0);
+}
+
+.review__content {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px #FFEAB1;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.slider {
+  width: 100%;
+}
+.slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+  top: 30%;
+  z-index: 10;
+}
+.slider .slick-prev,
+.slider .slick-next {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+  transition: 0.6s;
+}
+.slider .slick-prev:hover,
+.slider .slick-next:hover {
+  transform: scale(1.2);
+}
+.slider .slick-arrow.slick-prev {
+  left: 0%;
+  background-image: url("../images/review/prev.png");
+}
+.slider .slick-arrow.slick-next {
+  right: 0%;
+  background-image: url("../images/review/next.png");
+}
+
+.slick-slide {
+  height: 82% !important;
+}
+
+.slick-slide img {
+  height: 100% !important;
+}
+
+@media (max-width: 1070px) {
+  .slick-slide {
+    height: 100% !important;
+  }
+}
+@media (max-width: 880px) {
+  .review__content {
+    background-color: #FFEFB8;
+  }
+  .review__left {
+    display: none;
+  }
+  .review__right {
+    width: 100%;
+  }
+
+  .slider .slick-slide {
+    height: auto !important;
+  }
+  .slider .slick-arrow {
+    width: 44px;
+    height: 44px;
+    top: 25%;
+  }
+
+  .review__right {
+    padding: 20px 40px 20px 30px;
+  }
+
+  .review__right-title {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 540px) {
+  .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slick-dots li {
+    margin-top: 20px;
+    height: 25px !important;
+  }
+  .slider .slick-dots li:not(:last-child) {
+    margin-right: 20px;
+  }
+  .slider .slick-dots li button {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    background-color: var(--colorPink);
+    border: none;
+    border-radius: 100%;
+  }
+  .slider .slick-dots li button:focus-visible {
+    outline: unset;
+  }
+  .slider .slick-dots .slick-active button {
+    width: 14px;
+    height: 14px;
+    background-color: var(--colorFFF);
+    border: 2px solid var(--colorPink);
+    transition: 0.4s;
+  }
+
+  .review__content {
+    width: 100%;
+  }
+
+  .review__right-desc {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

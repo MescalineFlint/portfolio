@@ -1,0 +1,38 @@
+.video {
+  margin-bottom: 80px;
+  position: relative;
+}
+.video__btn {
+  position: absolute;
+  top: 29%;
+  left: 42%;
+  width: 11%;
+  height: 41%;
+  background-color: inherit;
+  border: none;
+}
+.video__btn:hover {
+  transform: scale(1.2);
+}
+.video__btn:focus-visible {
+  outline: unset;
+}
+
+.section__container-video::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/video/before.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 298px;
+  height: 770px;
+  bottom: -64%;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 960px) {
+  .section__container-video::before {
+    display: none;
+  }
+}

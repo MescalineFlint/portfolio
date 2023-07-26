@@ -1,0 +1,138 @@
+.consult {
+  padding-bottom: 360px;
+  position: relative;
+  background-image: url("../images/consult/consult-img.png");
+  background-size: cover;
+  background-position: center top;
+}
+.consult__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 155px;
+}
+.consult__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #3E2D00;
+}
+.consult__title-desc {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3E2D00;
+}
+.consult__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.consult__form-data {
+  margin-bottom: 5px;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-bottom: 22px;
+  width: 100%;
+  height: 50px;
+  background: var(--colorFFF);
+  box-shadow: inset 0px 4px 7px rgba(177, 133, 13, 0.62);
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  line-height: 23px;
+}
+.consult__label {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.consult__img {
+  display: none;
+}
+
+label {
+  margin-right: 3px;
+  position: relative;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4D4D4D;
+  cursor: pointer;
+}
+
+#consult__check {
+  display: none;
+}
+#consult__check + span {
+  position: absolute;
+  left: -25px;
+  top: -3px;
+  width: 16px;
+  height: 16px;
+  background: var(--colorFFF);
+  border: 0.5px solid var(--colorFFF);
+  box-shadow: inset 0px 1px 2px rgba(201, 165, 66, 0.63);
+  border-radius: 2px;
+}
+#consult__check + span::before {
+  content: " ";
+  position: absolute;
+  background-image: url("../images/check.png");
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  top: 2px;
+  left: 2px;
+  opacity: 1;
+}
+#consult__check:checked + span::before {
+  opacity: 0;
+}
+
+.consult__check-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: #4D4D4D;
+  text-decoration: underline;
+  transition: 0.6s;
+}
+
+@media (max-width: 540px) {
+  .consult {
+    background-image: none;
+    padding-bottom: 0;
+  }
+
+  .consult__content {
+    margin-bottom: 20px;
+    padding: 35px 0;
+    background-color: var(--colorBlue);
+    border-radius: 5px;
+  }
+
+  .consult__form-data {
+    box-shadow: inset 0px 4px 7px rgba(98, 154, 157, 0.55);
+  }
+
+  .consult__form {
+    width: 80%;
+  }
+
+  .consult__img {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 372px) {
+  .consult__label,
+.consult__title-desc,
+.consult__title {
+    text-align: center;
+  }
+
+  .consult__check-link {
+    font-size: 9px;
+    line-height: 11px;
+  }
+}

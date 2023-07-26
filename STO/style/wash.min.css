@@ -1,0 +1,287 @@
+.wash {
+  margin-bottom: 110px;
+  padding: 75px 0;
+  background-image: url("../images/wash/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wash__car-container {
+  position: relative;
+}
+.wash__car-container img {
+  width: 100%;
+}
+.wash__car-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  height: 35%;
+  background: var(--colorRed);
+  filter: blur(400px);
+}
+.wash__car-container::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 30%;
+  height: 30%;
+  background: var(--colorRed);
+  filter: blur(400px);
+}
+.wash__cont {
+  position: absolute;
+}
+.wash__cont a {
+  position: absolute;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--colorGreyCA);
+  z-index: 9;
+}
+
+.engine {
+  width: 20%;
+  top: 31%;
+  left: 0%;
+}
+.engine a {
+  top: -30%;
+}
+
+.carcase {
+  width: 20%;
+  top: 11%;
+  left: 26%;
+}
+.carcase a {
+  top: -30%;
+}
+
+.rain {
+  width: 20%;
+  top: 3%;
+  left: 60%;
+}
+.rain a {
+  top: -14%;
+  right: 6%;
+}
+
+.polishing {
+  width: 18%;
+  top: 24%;
+  left: 79%;
+}
+.polishing a {
+  top: -18%;
+  right: 6%;
+}
+
+.lights {
+  width: 20%;
+  bottom: 7%;
+  left: 4%;
+}
+.lights a {
+  bottom: 0%;
+  right: 0%;
+}
+
+.lux {
+  width: 19%;
+  bottom: 16%;
+  left: 26%;
+}
+.lux a {
+  bottom: 0%;
+  right: 2%;
+}
+
+.salon {
+  width: 25%;
+  bottom: 11%;
+  left: 49%;
+}
+.salon a {
+  bottom: 0%;
+  right: 3%;
+}
+
+.wax {
+  width: 20%;
+  bottom: 17%;
+  right: 13%;
+}
+.wax a {
+  bottom: 0%;
+  right: 0%;
+}
+
+.wash__car-container-mobile {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .wash__cont a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .wash__cont a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .wash__cont a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+@media (max-width: 676px) {
+  .wash__car-container {
+    display: none;
+  }
+  .wash__car-container-mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    height: 71%;
+  }
+  .wash__car-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .container {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .wash__cont-mobile {
+    position: absolute;
+  }
+  .wash__cont-mobile a {
+    position: absolute;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--colorFFF);
+  }
+  .wash__cont-mobile img {
+    width: 100%;
+  }
+  .engine-mobile {
+    width: 71%;
+    top: 37%;
+  }
+  .engine-mobile a {
+    bottom: 92%;
+    left: 0;
+  }
+  .carcase-mobile {
+    width: 85%;
+    top: 3%;
+  }
+  .carcase-mobile a {
+    bottom: 95%;
+    left: 0;
+  }
+  .rain-mobile {
+    width: 62%;
+    bottom: 15%;
+  }
+  .rain-mobile a {
+    bottom: 0%;
+    left: 0%;
+  }
+  .polishing-mobile {
+    width: 71%;
+    bottom: 47%;
+  }
+  .polishing-mobile a {
+    bottom: 0%;
+    left: 0%;
+  }
+  .lights-mobile {
+    width: 68%;
+    bottom: 36%;
+  }
+  .lights-mobile a {
+    bottom: 0%;
+    left: 0%;
+  }
+  .lux-mobile {
+    width: 68%;
+    top: 27%;
+  }
+  .lux-mobile a {
+    bottom: 82%;
+    left: 0%;
+  }
+  .salon-mobile {
+    width: 83%;
+    top: 15%;
+  }
+  .salon-mobile a {
+    bottom: 97%;
+    left: 0%;
+  }
+  .wax-mobile {
+    width: 62%;
+    bottom: 23%;
+  }
+  .wax-mobile a {
+    bottom: 0%;
+    left: 0;
+  }
+}
+@media (max-width: 540px) {
+  .engine-mobile {
+    width: 65%;
+  }
+  .carcase-mobile {
+    width: 75%;
+    top: 4%;
+  }
+  .rain-mobile {
+    width: 57%;
+    bottom: 18%;
+  }
+  .polishing-mobile {
+    width: 67%;
+    bottom: 50%;
+  }
+  .lights-mobile {
+    width: 56%;
+    bottom: 40%;
+  }
+  .lux-mobile {
+    width: 56%;
+  }
+  .salon-mobile {
+    width: 76%;
+    top: 16%;
+  }
+  .wax-mobile {
+    width: 56%;
+    bottom: 29%;
+  }
+}
+@media (max-width: 420px) {
+  .wash__car-container-mobile {
+    padding-left: 5%;
+  }
+  .carcase-mobile {
+    top: 7%;
+  }
+}
