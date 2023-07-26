@@ -1,0 +1,217 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/footer.css">
+    <title>Balance</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <section class="form-section">
+                <h1 class="main__title">Оформление заказа</h1>
+                <img src="assets/images/logo.png" alt="logo" class="logo-mob" />
+                <form class="form">
+                    <div class="form__top">
+                        <img src="assets/images/logo.png" alt="logo" class="form__logo" />
+                        <span class="form__top-desc">Индивидуальный рацион питания</span>
+                    </div>
+                    <h2 class="form__title">Оформление заказа</h2>
+                    <div class="form__center">
+                        <div class="form__center-left">
+                            <span class="form__center-left__item">Ваш персональный план питания ждёт вас!</span>
+                            <span class="form__center-left__item">По окончанию акции ваши расчеты сгорят, успейте
+                                преобрести по акции!</span>
+                            <h4 class="form__input-title">Адрес эл. почты</h4>
+                            <input id="input-email" type="email" class="form__inp form__inp-mob"
+                                placeholder="Ваша эл. почта" />
+                            <input type="submit" id="input-submit"
+                                class="form__input-btn form__btn form__input-btn__mob disabled" disabled="disabled"
+                                value="Оплатить" />
+                            <label for="offer" class="form__label">Нажимая кнопку "Оплатить" Вы даете согласие
+                                на обработку <a class="form__link" id="link-preces"
+                                    href="{{!data_processing_policy_file}}" target="_blank">персональных данных</a>, а
+                                также подтверждаете ознакомление с <a class="form__link" id="link-offer"
+                                    href="{{!offer_file}}" target="_blank">публичной офертой </a> и <a
+                                    class="form__link" id="link-tarif1" href="{{!tariff_file}}"
+                                    target="_blank">тарифами</a>.
+                                <input id="offer" type="checkbox" class="form__check" />
+                                <span></span>
+                            </label>
+                            <label for="payment" class="form__label payment">Нажимая кнопку "Оплатить" Вы подтверждаете
+                                ознакомление с автоматическими списаниями. После нажатия кнопки “Оплатить” Вы будете
+                                перенаправлены на защищенную платежную страницу PaySelection, где будет необходимо
+                                ввести данные Вашей пластиковой карты. В случае успешной авторизации Вы получите от
+                                сайта уведомление о том, что оплата проведена. Первое списание в размере 2047р. через 72
+                                часа после подписки и далее, согласно <a class="form__link" id="link-tarif2"
+                                    href="{{!tariff_file}}" target="_blank">тарифy </a> раз в 30 дней 2047р. или 1462р.
+                                за 10 дней, 1023р. за 7 дней, 438 за 3 дня, 146р. за день доступа в кабинет. Списания
+                                будут продолжаться до момента <a class="form__link" href="/cabinet/#/subscription"
+                                    target="_blank">отмены </a> подписки Держателем карты.
+                                <input id="payment" type="checkbox" class="form__check" />
+                                <span></span>
+                            </label>
+                            <div class="form__payment-container">
+                                <div class="form__payment-block">
+                                    <img src="assets/images/visa.png" alt="img" class="form__payment-img" />
+                                    <img src="assets/images/mastercard.png" alt="img" class="form__payment-img" />
+                                    <img src="assets/images/mir.svg" alt="img" class="form__payment-img" />
+                                </div>
+                                <div class="form__safety">
+                                    <img src="assets/images/pci.png" alt="img" class="form__safety-img" />
+                                    <div class="form__safety-desc">Стандарт безопасности при оплате банковскими картами
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__center-right">
+                            <div class="form__price-block">
+                                <div class="form__price-block__num">
+                                    <span class="form__old-price">1260 ₽</span>
+                                    <span class="form__new-price">33₽</span>
+                                </div>
+                                <span class="form__price-desc">с учётом скидки</span>
+                            </div>
+                            <div class="form__timer-block">
+                                <h3 class="form__timer-title">Акция закончится через</h3>
+                                <div class="form__timer">
+                                    <ul class="form__list">
+                                        <li class="form__item">
+                                            <span class="form__item-number form__timer__minut-first"></span>
+                                            <span class="form__item-number form__timer__minut-second"></span>
+                                            <span class="form__item-number timer-dots">:</span>
+                                            <span class="form__item-number form__timer__sec-first"></span>
+                                            <span class="form__item-number form__timer__sec-second"></span>
+                                        </li>
+                                    </ul>
+                                    <div class="form__time-desc">
+                                        <span class="form__timer-name">минут</span>
+                                        <span class="form__timer-name">секунд</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__center__mob-block">
+                                <h4 class="form__input-title form__input-title-mob">Адрес эл. почты</h4>
+                                <span class="form__center-left__item">Ваш персональный план питания ждёт вас!</span>
+                                <span class="form__center-left__item">По окончанию акции ваши расчеты сгорят, успейте
+                                    преобрести по акции!</span>
+                            </div>
+                            <div class="form__payment-container">
+                                <div class="form__payment-block">
+                                    <img src="assets/images/visa.png" alt="img" class="form__payment-img" />
+                                    <img src="assets/images/mastercard.png" alt="img" class="form__payment-img" />
+                                    <img src="assets/images/mir.svg" alt="img" class="form__payment-img" />
+                                </div>
+                                <div class="form__safety">
+                                    <img src="assets/images/pci.png" alt="img" class="form__safety-img" />
+                                    <div class="form__safety-desc">Стандарт безопасности при оплате банковскими картами
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__content-item footer__logo-container">
+                    <img class="footer__logo-img script_logo" src="{{!logo_file}}" alt="logo" />
+                    <div class="footer__logo-footer">© 2023 Copyright</div>
+                    <div class="footer__desktop footer__logo-bottom">
+                        <img src="assets/images/footer/mir-logo.svg" alt="logo" />
+                        <img src="assets/images/footer/mir-accept.png" alt="logo" />
+                    </div>
+                </div>
+                <div class="footer__content-item footer__info-container">
+                    <div class="footer__content-item-header">информация</div>
+                    <div class="footer__info-column-container">
+                        <div class="footer__info-column">
+                            <a class="footer__content-item-link footer__info-link script_tariff footer__info-link__inline-block"
+                                href="{{!tariff_file}}" target="_blank">
+                                Тарифы
+                            </a>
+                            <a class="footer__content-item-link footer__info-link script_offer footer__info-link__inline-block"
+                                href="{{!offer_file}}" target="_blank">
+                                Оферта
+                            </a>
+                            <a class="footer__content-item-link footer__info-link script_subscription"
+                                href="/cabinet/#/subscription" target="_blank">
+                                Отменить подписку
+                            </a>
+                            <a class="footer__content-item-link footer__info-link script_refund"
+                                href="/cabinet/#/refund" target="_blank">
+                                Возврат средств
+                            </a>
+                        </div>
+
+                        <div class="footer__info-column">
+                            <a class="footer__content-item-link footer__info-link script_faq" href="/cabinet/#/faq"
+                                target="_blank">
+                                Поддержка и FAQ
+                            </a>
+                            <a class="footer__content-item-link footer__info-link script_processing"
+                                href="{{!data_processing_policy_file}}" target="_blank">
+                                Политика обработки данных
+                            </a>
+                            <a class="footer__content-item-link footer__info-link script_privacy"
+                                href="{{!privacy_policy_file}}" target="_blank">
+                                Политика конфиденциальности
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer__content-item footer__about-container">
+                    <div class="footer__content-item-header">о компании</div>
+                    <div class="footer__about-link-container">
+                        <div class="footer__about-link script_about_company1">{{!about_company1}}</div>
+                        <div class="footer__about-link script_about_company2">{{!about_company2}}</div>
+                        <div class="footer__about-link script_about_company3">{{!about_company3}}</div>
+                    </div>
+                </div>
+                <div class="footer__content-item footer__contacts-container">
+                    <div class="footer__content-item-header">Контакты</div>
+                    <div class="footer__contacts-link-container">
+                        <img class="footer__contacts-link-img" src="./assets/images/footer/chat.png" />
+                        <a class="footer__content-item-link footer__contacts-linkscript_chat" target="_blank"
+                            href="mailto: {{!email}}">
+                            {{!email}}
+                        </a>
+                    </div>
+                    <div class="footer__contacts-link-container">
+                        <img class="footer__contacts-link-img" src="./assets/images/footer/phone.png" />
+                        <a class="footer__content-item-link footer__contacts-linkscript_phone" target="_blank"
+                            href="tel: {{!phone}}">
+                            {{!phone}}
+                        </a>
+                    </div>
+                    <div class="footer__contacts-link-container">
+                        <a class="footer__content-item-link footer__contacts-linkscript_faq footer__contacts-link_big"
+                            target="_blank" href="/cabinet/#/faq">
+                            Написать нам
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__copyright-container">© 2023 Copyright</div>
+                <div class="footer__mobile footer__logo-bottom">
+                    <img src="assets/images/footer/mir-logo.svg" alt="logo" />
+                    <img src="assets/images/footer/mir-accept.png" alt="logo" />
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/script/jquery.js"></script>
+    <script src="assets/script/timer.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/footer.js"></script>
+</body>
+
+</html>

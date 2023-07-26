@@ -1,0 +1,221 @@
+.footer {
+  z-index: 2;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.75px;
+  padding: 13px 17px 23px;
+}
+.footer * {
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 1000px) {
+  .footer {
+    font-size: 14px;
+    padding-top: 25px;
+  }
+}
+.footer__content {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .footer__content {
+    flex-direction: column;
+    width: max-content;
+  }
+}
+@media (max-width: 500px) {
+  .footer__content {
+    width: auto;
+  }
+}
+.footer__content-item {
+  padding-right: 40px;
+}
+@media (max-width: 1200px) {
+  .footer__content-item {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__content-item {
+    padding-right: 0;
+  }
+}
+@media (min-width: calc(1000px + 1px)) {
+  .footer__content-item:nth-child(2) {
+    margin-left: auto;
+  }
+}
+.footer__content-item-header {
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+  .footer__content-item-header {
+    display: none;
+  }
+}
+.footer__content-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.footer__logo-img {
+  display: block;
+  max-height: 53px;
+  max-width: 222px;
+}
+@media (max-width: 1000px) {
+  .footer__logo-img {
+    max-height: 44px;
+    max-width: 186px;
+  }
+}
+.footer__logo-footer {
+  margin-top: 15px;
+  color: #fff;
+}
+@media (max-width: 1000px) {
+  .footer__logo-footer {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__logo-container {
+    width: 100%;
+    padding-bottom: 33px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 900px) {
+  .footer__logo-container {
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1001px) {
+  .footer__logo-container {
+    align-self: flex-end;
+  }
+}
+.footer__logo-bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+@media (max-width: 1000px) {
+  .footer__logo-bottom {
+    justify-content: center;
+    order: 6;
+  }
+}
+.footer__logo-bottom img {
+  display: block;
+  max-height: 20px;
+}
+.footer__logo-bottom img:first-child {
+  margin-right: 15px;
+}
+@media (max-width: 1000px) {
+  .footer__info-container {
+    border-bottom: 1px solid #2f2f2f;
+  }
+}
+.footer__info-column {
+  margin-right: 20px;
+}
+.footer__info-column-container {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .footer__info-column-container {
+    flex-direction: column;
+  }
+}
+.footer__info-link {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+@media (max-width: 1000px) {
+  .footer__info-link {
+    margin-bottom: 16px;
+  }
+}
+.footer__info-link__inline-block {
+  display: inline-block;
+  margin-right: 7px;
+}
+@media (max-width: 1000px) {
+  .footer__about-container {
+    order: 4;
+    padding: 16px 0 32px;
+  }
+}
+.footer__about-link {
+  margin-right: 16px;
+}
+@media (max-width: 1000px) {
+  .footer__about-link-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__contacts-container {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #2f2f2f;
+    padding: 19px 0;
+  }
+}
+.footer__contacts-link_big {
+  font-size: 14px;
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .footer__contacts-link_big {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
+.footer__contacts-link-img {
+  margin-right: 10px;
+  width: 18px;
+}
+.footer__contacts-link-container {
+  display: flex;
+  align-items: center;
+}
+.footer__contacts-link-container:not(:last-child) {
+  margin-bottom: 4px;
+}
+@media (max-width: 1000px) {
+  .footer__contacts-link-container:not(:last-child) {
+    margin-bottom: 21px;
+  }
+}
+.footer__copyright-container {
+  order: 5;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #7d7d7d;
+}
+@media (min-width: calc(1000px + 1px)) {
+  .footer__copyright-container {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__desktop {
+    display: none;
+  }
+}
+@media (min-width: calc(1000px + 1px)) {
+  .footer__mobile {
+    display: none;
+  }
+}
